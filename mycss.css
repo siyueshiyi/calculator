@@ -1,0 +1,84 @@
+table{
+    border-radius: 10px;
+    border-color: black;
+    font-family:"montserrat" ;
+    background-image: linear-gradient(125deg,#4efaff,#ffe68f,#ffb4ca,#e7d8d6,#fdf3ff);
+    background-size: 500%;
+    animation: bganimation 15s infinite;
+}
+/*动画移动*/
+@keyframes bganimation {
+    /*开头*/
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    /*结尾*/
+    100%{
+        background-position: 0% 50%;
+    }
+}
+.button{
+    outline-style: none;
+    width: 60px;;
+    height: 60px;
+    cursor: pointer;
+    font-size: 25px;
+    border-radius: 25px;
+    border-color: black;
+    background-image: linear-gradient(125deg, #fdf3ff, #e7d8d6, #ffb4ca, #ffe68f, #4efaff);
+    background-size: 500%;
+    animation: bganimation 15s infinite;
+}
+/*输入框*/
+.textview{
+    text-align:right;
+    width: 235px;
+    margin:0px;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: black;
+    color:black;
+}
+/*阴影效果*/
+.box{
+    position: absolute;
+    /*border-bottom: 25px;*/
+    top:50%;
+    left: 50%;
+    transform: translateX(-50%)translateY(-50%);
+    width: 240px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:before{
+    content: '';
+    position: absolute;
+    top:-2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    background: #fff;
+}
+.box:after{
+    content: '';
+    position: absolute;
+    top:-1px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index:-2;
+    filter: blur(50px);
+}
+.box:before,
+.box:after{
+    background: linear-gradient(235deg, #ff0e1b, #162104, #daceff);
+}
+
