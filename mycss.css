@@ -1,7 +1,8 @@
-*{
-    border-radius: 25px;
+table{
+    border-radius: 10px;
+    border-color: black;
     font-family:"montserrat" ;
-    background-image: linear-gradient(125deg,#2c3e50,#27ae60,#2980b9,#e74c3c,#8e44ad);
+    background-image: linear-gradient(125deg,#4efaff,#ffe68f,#ffb4ca,#e7d8d6,#fdf3ff);
     background-size: 500%;
     animation: bganimation 15s infinite;
 }
@@ -20,27 +21,32 @@
     }
 }
 .button{
+    outline-style: none;
     width: 60px;;
     height: 60px;
     cursor: pointer;
     font-size: 25px;
     border-radius: 25px;
-    background-image: linear-gradient(125deg, #4a2b50, #ae2b33, #4ab94f, #3125e7, #ad179e);
+    border-color: black;
+    background-image: linear-gradient(125deg, #fdf3ff, #e7d8d6, #ffb4ca, #ffe68f, #4efaff);
     background-size: 500%;
     animation: bganimation 15s infinite;
 }
 /*输入框*/
 .textview{
+    text-align:right;
     width: 235px;
-    margin:5px;
+    margin:0px;
     font-size: 25px;
     padding: 10px;
-    border-radius: 25px;
-    color:white;
+    border-radius: 10px;
+    border-color: black;
+    color:black;
 }
+/*阴影效果*/
 .box{
     position: absolute;
-    border-radius: 25px;
+    /*border-bottom: 25px;*/
     top:50%;
     left: 50%;
     transform: translateX(-50%)translateY(-50%);
@@ -73,6 +79,6 @@
 }
 .box:before,
 .box:after{
-    background: linear-gradient(235deg,#89ff00,#060c21,#00bcd4);
+    background: linear-gradient(235deg, #ff0e1b, #162104, #daceff);
 }
 
