@@ -2,5 +2,5 @@
   
 团队合作设计实现一个计算器。
 
-> 本程序使用html+css+javascript实现
+> 本程序使用html+css+javascript实现  
 > 组长:张伟 组员:王文雷 薛佳伟 张桄菖
