@@ -1,6 +1,3 @@
-/**
- * Created by 44623 on 2019/10/16.
- */
 function insert(num)
 {
     document.form.textview.value=document.form.textview.value+num;
@@ -25,7 +22,4 @@ function  back(){
     var previous=document.form.textview.value;
     document.form.textview.value=previous.substring(0,previous.length-1);
 }
-
-
-
 
